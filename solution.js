@@ -26,4 +26,34 @@ for (let i = 0; i <= arr.length; i++) {
     }
 }
 
-console.log("pair", pair);
+console.log(pair);
+
+3. 
+//const arr = ['r', 'a', 'c', 'e', 'c', 'a', 'r']
+const arr = ['h', 'e', 'l', 'l', 'o']
+let result = true
+  let j = arr.length - 1
+for (let i = 0; i <= arr.length; i++) {
+        if (arr[i] != arr[j]) {
+            result = false
+        }
+    
+     if (i > j) {
+            break;
+        }
+        j--;
+}
+
+console.log(result);
+
+7. 
+const vowles = "aeiouAEIOU"
+const text = "idea"
+let count = 0
+for (const char of text) {
+        if (vowles.includes(char)) {
+           count++
+        }
+}
+
+console.log(count);
